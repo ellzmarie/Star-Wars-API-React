@@ -3,7 +3,7 @@ import './App.css';
 import StarWarsDisplay from './components/StarWarsDisplay.js'
 
 function App() {
-  const [starWarsData, setStarWarsData] = useState({})
+  const [starWarsData, setStarWarsData] = useState(null)
 
   const makeApiCall = async () => {
     const starWarsUrl = 'https://swapi.dev/api/starships/'
@@ -15,13 +15,17 @@ function App() {
   }
 
   useEffect(() => {
-    makeApiCall('star wars')
+    makeApiCall()
   }, [])
+
+  const starships = starWarsData?.results.map((ele, index) => {
+    return <StarWarsDisplay {...ele} key={index}/>
+  }) 
 
   return (
     <div className="App">
       <h1>STAR WARS STARSHIPS</h1>
-      <StarWarsDisplay swdata={starWarsData}/>
+      {starships}
     </div>
   );
 }

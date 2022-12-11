@@ -1,15 +1,11 @@
 
-const StarWarsDisplay = ({swdata}) => {
-    console.log(swdata)
+const StarWarsDisplay = ({name}) => {
+ return (
+    <div className='box'>
+        <h2>{name}</h2>
+    </div>
 
-    return swdata.results[0].name ? (
-        <>
-        <p>Test</p>
-        <h2>{swdata.results[0].name}</h2>
-        </>
-    ) : (
-        <p>test12</p>
-    )
+ )
 }
 
-export default StarWarsDisplay;
+export default StarWarsDisplay
