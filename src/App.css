@@ -9,30 +9,31 @@ h1 {
   color: #cbc0ae;
   padding: 0;
   margin: auto;
+  margin-bottom: 30px;
 }
 
 h2 {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  align-items: start;
   color: #cbc0ae;
   padding: 0px;
-  margin: 0px;
-  margin-bottom: 50px;
-  height: 50px;
-
+  margin: auto;
+  margin-bottom: 30px;
+  height: 60px;
+  text-align: center;
 }
 
 .box {
-  background-color:#16103b;
-  border: solid #2e2e3a 2px;
-  padding: 50px;
-  align-content: space-between;
-  display: flex;
+  background-color:#2e2e3a;
+  border: solid #2e2e3a 5px;
+  padding: 40px;
+  display: inline-flex;
   flex-wrap: wrap;
   height: 85px;
-  width: 85px;
+  width: 90px;
   flex-direction: row;
   text-align: center;
   margin: 15px;
   justify-content: space-between;
+  font-size: 12px;;
 }
