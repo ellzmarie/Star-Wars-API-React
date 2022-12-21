@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <h1>STAR WARS STARSHIPS</h1>
-      {starships}
+      <div className='container'>{starships}</div>
     </div>
   );
 }
