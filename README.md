@@ -14,4 +14,4 @@ In this lab, I'll consume the [Star Wars API](https://swapi.dev/documentation#st
 
 - Choose a css in React method and apply some style to your components
 
-You can view the live app, here: https://tourmaline-selkie-b97190.netlify.app/
+You can view my live app, here: https://tourmaline-selkie-b97190.netlify.app/
